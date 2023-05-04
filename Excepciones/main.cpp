@@ -2,7 +2,8 @@
  * @file main.cpp
  * @author Brenda Romero Solano (brenda.romero@ucr.ac.cr)
  * @brief Este es el archivo principal, que sirve como punto de entrada a un programa con
- * el fin de probar el correcto funcionamiento de la implementación de la excepción personalizada.
+ * el fin de probar el correcto funcionamiento de la implementación de la excepción personalizada, además de
+ * de la prueba de las tres excepciones a inveestigar.
  * 
  * @version 0.1
  * @date 2023-05-03
