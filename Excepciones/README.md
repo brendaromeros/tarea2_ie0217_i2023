@@ -1,4 +1,4 @@
-# ALGORITMOS
+# EXCEPCIONES
 
 El proyecto es una aplicación que hace uso de excepciones en C++. Se define una excepción personalizada llamada MiException, la cual se utiliza en el código principal (main) junto con otras excepciones intencionales.
 
