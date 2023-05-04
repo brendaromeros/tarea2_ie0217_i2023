@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>tareaDos: ALGORITMOS</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">tareaDos
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">ALGORITMOS </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>En este proyecto se implementaron diversos algoritmos de ordenamiento de números en C++. Los algoritmos implementados fueron: Bubble Sort, Insertion Sort, Selection Sort y Quick Sort.</p>
+<p>Cada uno de estos algoritmos fue implementado en un mismo archivo y se utilizó una función genérica para intercambiar elementos en los algoritmos. Además, cada función se encarga de imprimir los elementos del arreglo después de ordenarlos.</p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+Instalación</h1>
+<p>Para instalar correctamente este proyecto, debe descargar el contenido de esta carpeta y guardarlo en un mismo directorio. Después, puede utilizar una herramienta como GCC para el lenguaje de programación C++.</p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Uso</h1>
+<p>Para ejecutar el programa, puede escribir el comando "make" en la terminal, siempre y cuando ésta tenga instalado el mismo con anterioridad; de lo contrario, deberá correr las instrucciones "**g++ .\sort.cpp .\main.cpp -o main.exe**" y "**.\main.exe**" si desea ejecutar la versión por defecto del programa. De lo contrario, el usuario debe editar la función "main" del archivo "main.cpp", de manera que se guarde como una constante el tamaño del arreglo a ordenar, se ingresen los parámetros array de números y el tamaño del mismo en las para las funciones "bubbleSort", "selectionSort" e "insertionSort", mientras que para la función "quickSort" se debe agregar el array de números, la primera y última posición a evaluar y por último, el tamaño del array.</p>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Análisis de algoritmos</h1>
+<p>A continuación se muestra un análisis de la complejidad de cada uno de los algoritmos de control implementados en este proyecto utilizando la notación Big-O:</p>
+<ul>
+<li>BubbleSort: Este algoritmo tiene una complejidad de tiempo de O(n^2), donde n es el número de elementos a ordenar. De hecho, en el peor de los casos, se deben comparar todos los pares de elementos del arreglo.</li>
+<li>SelectionSort: Este algoritmo tiene una complejidad temporal de O(n^2), donde n es el número de elementos a ordenar. De hecho, el elemento más pequeño de la matriz se debe encontrar en cada iteración, lo que implica comparar cada elemento con todos los demás elementos de la matriz.</li>
+<li>InsertionSort: Este algoritmo tiene una complejidad temporal de O(n^2) en el peor de los casos y O(n) en el mejor de los casos. De hecho, en el peor de los casos, se debe recorrer toda la matriz para insertar cada elemento en la posición correcta, lo que implica comparar cada elemento con todos los elementos anteriores. En el mejor de los casos, cuando la matriz ya está ordenada, se pueden hacer comparaciones simples para ver si un elemento ya está en la posición correcta.</li>
+<li>Quicksort: Este algoritmo tiene una complejidad temporal promedio de O(n log n), donde n es el número de elementos a ordenar. Sin embargo, en el peor de los casos, su complejidad temporal es O(n^2). De hecho, la complejidad del algoritmo depende en gran medida del elemento comercial elegido.En el peor caso, si el pivote es siempre el elemento más grande o más pequeño del arreglo, se deben hacer muchas particiones y la complejidad se acerca a O(n^2). En el mejor caso, el pivote divide el arreglo en dos mitades iguales y el algoritmo es extremadamente rápido.</li>
+</ul>
+<p>Es importante tener en cuenta que la complejidad de cada algoritmo puede variar dependiendo de factores como el número de elementos a ordenar, el tipo de datos a ordenar y el estado inicial del arreglo. Sin embargo, en general, estos son los peores casos posibles para cada algoritmo.</p>
+<h1><a class="anchor" id="autotoc_md4"></a>
+Licencia</h1>
+<p>Este proyecto está licenciado bajo la Licencia MIT. Consulte el enlace <a href="https://opensource.org/licenses/MIT">https://opensource.org/licenses/MIT</a> para obtener más información.</p>
+<h1><a class="anchor" id="autotoc_md5"></a>
+Autor</h1>
+<p>Este proyecto fue arreglado por Brenda Romero Solano. Si tiene alguna pregunta o sugerencia, no dude en ponerse en contacto conmigo por correo electrónico a <a href="#" onclick="location.href='mai'+'lto:'+'bre'+'nd'+'a.r'+'om'+'ero'+'@u'+'cr.'+'ac'+'.cr'; return false;">brend<span class="obfuscator">.nosp@m.</span>a.ro<span class="obfuscator">.nosp@m.</span>mero@<span class="obfuscator">.nosp@m.</span>ucr.<span class="obfuscator">.nosp@m.</span>ac.cr</a>. </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

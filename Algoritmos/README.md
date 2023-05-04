@@ -3,6 +3,8 @@ En este proyecto se implementaron diversos algoritmos de ordenamiento de número
 
 Cada uno de estos algoritmos fue implementado en un mismo archivo y se utilizó una función genérica para intercambiar elementos en los algoritmos. Además, cada función se encarga de imprimir los elementos del arreglo después de ordenarlos.
 
+Se incluye un archivo de configuración para Doxygen, el cual genera documentación para la clase MiException. Además, se provee un archivo Makefile para compilar el programa de manera sencilla.
+
 # Instalación
 Para instalar correctamente este proyecto, debe descargar el contenido de esta carpeta y guardarlo en un mismo directorio. Después, puede utilizar una herramienta como GCC para el lenguaje de programación C++.
 
