@@ -3,13 +3,19 @@ En este proyecto se implementaron diversos algoritmos de ordenamiento de número
 
 Cada uno de estos algoritmos fue implementado en un mismo archivo y se utilizó una función genérica para intercambiar elementos en los algoritmos. Además, cada función se encarga de imprimir los elementos del arreglo después de ordenarlos.
 
-Se incluye un archivo de configuración para Doxygen, el cual genera documentación para la clase MiException. Además, se provee un archivo Makefile para compilar el programa de manera sencilla.
+Se incluye una carpeta con la documentación utilizando doxygen, el cual genera documentación para el proyecto. Además, se provee un archivo Makefile para compilar el programa de manera sencilla.
 
 # Instalación
 Para instalar correctamente este proyecto, debe descargar el contenido de esta carpeta y guardarlo en un mismo directorio. Después, puede utilizar una herramienta como GCC para el lenguaje de programación C++.
 
 # Uso
-Para ejecutar el programa, puede escribir el comando "make" en la terminal, siempre y cuando ésta tenga instalado el mismo con anterioridad; de lo contrario, deberá correr las instrucciones "**g++ .\sort.cpp .\main.cpp -o main.exe**" y "**.\main.exe**" si desea ejecutar la versión por defecto del programa. De lo contrario, el usuario debe editar la función "main" del archivo "main.cpp", de manera que se guarde como una constante el tamaño del arreglo a ordenar, se ingresen los parámetros array de números y el tamaño del mismo en las para las funciones "bubbleSort", "selectionSort" e "insertionSort", mientras que para la función "quickSort" se debe agregar el array de números, la primera y última posición a evaluar y por último, el tamaño del array.
+Para ejecutar el programa, puede escribir el comando "make" en la terminal, siempre y cuando ésta tenga instalado el mismo con anterioridad; de lo contrario, deberá correr las instrucciones:
+
+```
+g++ .\sort.cpp .\main.cpp -o main.exe
+.\main.exe
+```
+ Si desea ejecutar la versión por defecto del programa. De lo contrario, el usuario debe editar la función "main" del archivo "main.cpp", de manera que se guarde como una constante el tamaño del arreglo a ordenar, se ingresen los parámetros array de números y el tamaño del mismo en las para las funciones "bubbleSort", "selectionSort" e "insertionSort", mientras que para la función "quickSort" se debe agregar el array de números, la primera y última posición a evaluar y por último, el tamaño del array.
 
 # Análisis de algoritmos
 

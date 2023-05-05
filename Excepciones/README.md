@@ -6,13 +6,22 @@ En el archivo MiException.hpp se define la clase MiException que hereda de std::
 
 En el archivo main.cpp se utiliza try-catch para manejar diferentes tipos de excepciones intencionales. Primero se lanza la excepción MiException, se captura en el catch y se muestra el mensaje personalizado. Luego se realizan divisiones por cero, acceso fuera de los límites de un arreglo y conversión de tipos inválidos, cada uno en su propio bloque try-catch. En cada caso se captura la excepción y se muestra un mensaje genérico de error.
 
-Se incluye un archivo de configuración para Doxygen, el cual genera documentación para la clase MiException. Además, se provee un archivo Makefile para compilar el programa de manera sencilla.
+Se incluye una carpeta con la documentación utilizando doxygen, el cual genera documentación para el proyecto. Además, se provee un archivo Makefile para compilar el programa de manera sencilla.
 
 # Instalación
 Para instalar correctamente este proyecto, debe descargar el contenido de esta carpeta y guardarlo en un mismo directorio. Después, puede utilizar una herramienta como GCC para el lenguaje de programación C++.
 
 # Uso
-Para ejecutar el programa, puede escribir el comando "make" en la terminal, siempre y cuando ésta tenga instalado el mismo con anterioridad; de lo contrario, deberá correr las instrucciones "**g++ .\exceptions.cpp .\main.cpp -o main.exe**" y "**.\main.exe**" si desea ejecutar la versión por defecto del programa. De lo contrario, el usuario debe editar la función "main" del archivo "main.cpp", de manera que para levantar la excepción personalizada; se ingrese "**throw MiException();**", si se desea evitar que el programa deje de funcionar, esta sentencia deberá de escribirse dentro de un bloque "**try-catch**".
+Para ejecutar el programa, puede escribir el comando "make" en la terminal, siempre y cuando ésta tenga instalado el mismo con anterioridad; de lo contrario, deberá correr las instrucciones:
+```
+g++ .\exceptions.cpp .\main.cpp -o main.exe
+.\main.exe
+```
+si desea ejecutar la versión por defecto del programa. De lo contrario, el usuario debe editar la función "main" del archivo "main.cpp", de manera que para levantar la excepción personalizada; se ingrese;
+```
+throw MiException():
+```
+si se desea evitar que el programa deje de funcionar, esta sentencia deberá de escribirse dentro de un bloque "**try-catch**".
 
 # Investigación
 

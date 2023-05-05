@@ -12,8 +12,8 @@ main: exceptions.o main.o
 	./main.exe
 	del /q *.o main.exe
 
-sort.o: exceptions.cpp
-	g++ -c sort.cpp
+exceptions.o: exceptions.cpp
+	g++ -c exceptions.cpp
 
 main.o: main.cpp
 	g++ -c main.cpp
