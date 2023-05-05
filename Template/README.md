@@ -21,20 +21,20 @@ si desea ejecutar la versión por defecto del programa. De lo contrario, el usua
 ```
 Stack<tipoDeDato> nombre;
 ```
-Para después utilizar solo llamar los métodos de la clase procurando pasar correctamente los parámetros requeridos; cabe mencionar que para utilizar la función ***"foreach()"*** se debe de pasar una función que  tenga como parámetro una referencia del mismo tipo de dato que el stack al que le vamos a aplicar la función ***"foreach()"***
+para después utilizar solo llamar los métodos de la clase procurando pasar correctamente los parámetros requeridos; cabe mencionar que para utilizar la función ***"foreach()"*** se debe de pasar una función que  tenga como parámetro una referencia del mismo tipo de dato que el stack al que le vamos a aplicar la función ***"foreach()"***
 
 # Análisis de los include del código
 Todos los "include" que se incluyen en el código son necesarios ya que se utilizan para proporcionar funcionalidades específicas que se utilizan en diferentes partes del código.
 
-El primer "include", "<iostream>", es necesario para proporcionar la funcionalidad de entrada y salida estándar que se utiliza en la función principal del programa.
+El primer "include <iostream>", es necesario para proporcionar la funcionalidad de entrada y salida estándar que se utiliza en la función principal del programa.
 
-El segundo "include", "<vector>", es necesario para implementar el almacenamiento subyacente para la pila. La clase "vector" proporciona un arreglo dinámico que se utiliza para almacenar los elementos de la pila.
+El segundo "include <vector>", es necesario para implementar el almacenamiento subyacente para la pila. La clase "vector" proporciona un arreglo dinámico que se utiliza para almacenar los elementos de la pila.
 
-El tercer "include", "<algorithm>", es necesario para proporcionar la función "std::for_each()" que se utiliza en el método "foreach()". La función "for_each()" se utiliza para aplicar una función o función lambda a cada elemento en la pila.
+El tercer "include <algorithm>", es necesario para proporcionar la función "std::for_each()" que se utiliza en el método "foreach()". La función "for_each()" se utiliza para aplicar una función o función lambda a cada elemento en la pila.
 
-El cuarto "include", "<stdexcept>", es necesario para lanzar una excepción en caso de que la pila esté vacía. La clase "out_of_range" se utiliza para lanzar una excepción en este caso.
+El cuarto "include <stdexcept>", es necesario para lanzar una excepción en caso de que la pila esté vacía. La clase "out_of_range" se utiliza para lanzar una excepción en este caso.
 
-Finalmente, el quinto "include", "<functional>", es necesario para proporcionar la clase de plantilla "std::function" que se utiliza en el método "foreach()". La clase "std::function" se utiliza para proporcionar una interfaz para funciones y objetos que se comportan como funciones.
+Finalmente, el quinto "include <functional>", es necesario para proporcionar la clase de plantilla "std::function" que se utiliza en el método "foreach()". La clase "std::function" se utiliza para proporcionar una interfaz para funciones y objetos que se comportan como funciones.
 
 # Licencia
 Este proyecto está licenciado bajo la Licencia MIT. Consulte el enlace https://opensource.org/licenses/MIT para obtener más información.
