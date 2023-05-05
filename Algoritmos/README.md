@@ -15,7 +15,7 @@ Para ejecutar el programa, puede escribir el comando "make" en la terminal, siem
 g++ .\sort.cpp .\main.cpp -o main.exe
 .\main.exe
 ```
- Si desea ejecutar la versión por defecto del programa. De lo contrario, el usuario debe editar la función "main" del archivo "main.cpp", de manera que se guarde como una constante el tamaño del arreglo a ordenar, se ingresen los parámetros array de números y el tamaño del mismo en las para las funciones "bubbleSort", "selectionSort" e "insertionSort", mientras que para la función "quickSort" se debe agregar el array de números, la primera y última posición a evaluar y por último, el tamaño del array.
+ si desea ejecutar la versión por defecto del programa. De lo contrario, el usuario debe editar la función "main" del archivo "main.cpp", de manera que se guarde como una constante el tamaño del arreglo a ordenar, se ingresen los parámetros array de números y el tamaño del mismo en las para las funciones "bubbleSort", "selectionSort" e "insertionSort", mientras que para la función "quickSort" se debe agregar el array de números, la primera y última posición a evaluar y por último, el tamaño del array.
 
 # Análisis de algoritmos
 

@@ -17,7 +17,7 @@ Para ejecutar el programa, puede escribir el comando "make" en la terminal, siem
 g++ .\exceptions.cpp .\main.cpp -o main.exe
 .\main.exe
 ```
-si desea ejecutar la versión por defecto del programa. De lo contrario, el usuario debe editar la función "main" del archivo "main.cpp", de manera que para levantar la excepción personalizada; se ingrese;
+si desea ejecutar la versión por defecto del programa. De lo contrario, el usuario debe editar la función "main" del archivo "main.cpp", de manera que para levantar la excepción personalizada se ingrese:
 ```
 throw MiException():
 ```
