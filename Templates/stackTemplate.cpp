@@ -24,20 +24,67 @@ OTROS ACUERDOS EN EL SOFTWARE.
 */
 
 #include <iostream>
+#include <vector>
+#include <algorithm>
+#include <stdexcept>
+#include <functional>
 
-class MyException : public std::exception {
+template<typename T>
+class Stack {
+private:
+  std::vector<T> data_;
+
 public:
-  const char* what() const throw() {
-    return "My custom exception";
+  void push(T value) {
+    data_.push_back(value);
+  }
+
+  T pop() {
+    if (data_.empty()) {
+      throw std::out_of_range("Stack is empty");
+    }
+    T value = data_.back();
+    data_.pop_back();
+    return value;
+  }
+
+  void clear() {
+    data_.clear();
+  }
+
+  bool empty() const {
+    return data_.empty();
+  }
+
+  std::size_t size() const {
+    return data_.size();
+  }
+
+  void foreach(const std::function<void(T&)>& func) {
+    std::for_each(data_.begin(), data_.end(), func);
   }
 };
 
 int main() {
+  Stack<int> s;
+  s.push(2021);
+  s.push(2054);
+  s.push(6524);
+
+  std::cout << "Stack size: " << s.size() << std::endl;
+
+  s.foreach([](int& value) {
+    std::cout << "Value: " << value << std::endl;
+  });
 
   try {
-    throw MyException();
-  } catch (std::exception& e) {
-    std::cout << "Error: " << e.what() << std::endl;
+    while (!s.empty()) {
+      int value = s.pop();
+      std::cout << "Popped value: " << value << std::endl;
+    }
+    std::cout << "Stack size: " << s.size() << std::endl;
+  } catch (const std::exception& e) {
+    std::cerr << "Exception: " << e.what() << std::endl;
   }
 
   return 0;
